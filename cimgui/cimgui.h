@@ -35,22 +35,24 @@ struct ImFontConfig;
 struct ImFontAtlas;
 struct ImDrawCmd;
 
-typedef unsigned short ImDrawIdx;
+#ifndef  ImDrawidx
+#define ImDrawIdx unsigned int
+#endif
 typedef unsigned int ImU32;
-typedef unsigned short ImWchar;     
-typedef void* ImTextureID;       
-typedef ImU32 ImGuiID;              
-typedef int ImGuiCol;               
-typedef int ImGuiStyleVar;          
-typedef int ImGuiKey;               
-typedef int ImGuiAlign;             
-typedef int ImGuiColorEditMode;     
-typedef int ImGuiMouseCursor;       
-typedef int ImGuiWindowFlags;       
-typedef int ImGuiSetCond;           
-typedef int ImGuiInputTextFlags;    
-typedef int ImGuiSelectableFlags;   
-typedef int ImGuiTreeNodeFlags;     
+typedef unsigned short ImWchar;
+typedef void* ImTextureID;
+typedef ImU32 ImGuiID;
+typedef int ImGuiCol;
+typedef int ImGuiStyleVar;
+typedef int ImGuiKey;
+typedef int ImGuiAlign;
+typedef int ImGuiColorEditMode;
+typedef int ImGuiMouseCursor;
+typedef int ImGuiWindowFlags;
+typedef int ImGuiSetCond;
+typedef int ImGuiInputTextFlags;
+typedef int ImGuiSelectableFlags;
+typedef int ImGuiTreeNodeFlags;
 typedef int (*ImGuiTextEditCallback)(struct ImGuiTextEditCallbackData *data);
 typedef void (*ImGuiSizeConstraintCallback)(struct ImGuiSizeConstraintCallbackData* data);
 typedef void (*ImDrawCallback)(CONST struct ImDrawList* parent_list, CONST struct ImDrawCmd* cmd);
