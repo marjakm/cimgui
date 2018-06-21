@@ -49,7 +49,7 @@ struct Glyph;
 #define IMFONTGLYPH Glyph
 #endif
 
-typedef unsigned short ImDrawIdx;
+// typedef unsigned short ImDrawIdx;
 typedef unsigned int ImU32;
 typedef unsigned short ImWchar;
 typedef void *ImTextureID;
